@@ -6,11 +6,11 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        int n = 10;
-        int tre = 0;
+        int n = 5;
+        int tre = (n * (n+1))/2;
         int fact = 1;
+
         for (int i = 1; i <= n; i++) {
-            tre = tre + i;
             fact = fact * i;
         }
         System.out.println(tre);
