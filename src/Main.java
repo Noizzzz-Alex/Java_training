@@ -1,48 +1,35 @@
-import java.util.Scanner;
+/*
+Реализуйте алгоритм сортировки пузырьком числового массива (введён вами),
+результат после каждой итерации запишите в лог-файл.
+ */
+
+import java.util.stream.IntStream;
 
 public class Main {
-    /*
-    Реализовать простой калькулятор (+ - / *)
-    Ввод числа ->
-    Ввод знака ->
-    Ввод числа ->
-     */
+
 
     public static void main(String[] args) {
-        System.out.println("Введите первое число: ");
-        Scanner sc_number_first = new Scanner(System.in);
-        //sc_number_first.close();
-        int first_number = Integer.parseInt(sc_number_first.nextLine());
+        int[] array_n = new int[]{5, 12, 57, 37, 56, 65, 684, 1869, 17};
+        int k = array_n.length;
 
-        System.out.println("Действие(+, -, *, /): ");
-        Scanner act = new Scanner(System.in);
-        //act.close();
-        char action = act.next().charAt(0);
+        for (int i = 0; i < k - 1; i++) {
+            if (array_n[i] > array_n[i +1]){
+                int temp = array_n[i];
+                array_n[i] = array_n[i+1];
+                array_n[i+1] = temp;
+                i = 0;
+            }
 
-        System.out.println("Введите второе число: ");
-        Scanner sc_number_two = new Scanner(System.in);
-        //sc_number_two.close();
-        int number_two = Integer.parseInt(sc_number_two.nextLine());
 
-        int result;
-        if (action == '+') {
-            result = first_number + number_two;
-            System.out.printf("Результат = %d ", result);
+
         }
-        if (action == '-') {
-            result = first_number - number_two;
-            System.out.printf("Результат = %d ", result);
-        }
-        if (action == '*') {
-            result = first_number * number_two;
-            System.out.printf("Результат = %d ", result);
-        }
-        if (action == '/') {
-            result = first_number / number_two;
-            System.out.printf("Результат = %d ", result);
-        }
+        IntStream.range(0, k).forEach(i -> System.out.printf("%d, ", array_n[i]));
+
+
+
     }
 }
+
 
 
 

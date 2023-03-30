@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="init task#3 of HomeWork#1">
+    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="added solution task#3 of HomeWork#1">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HomeWork#1_task#2" />
+        <entry key="$PROJECT_DIR$" value="HomeWork#1_task#3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679868132192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added solution task#3 of HomeWork#1">
+      <created>1679933529206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679933529206</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +162,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="added task#1 of homework#1" />
     <MESSAGE value="init task#3 of HomeWork#1" />
-    <option name="LAST_COMMIT_MESSAGE" value="init task#3 of HomeWork#1" />
+    <MESSAGE value="added solution task#3 of HomeWork#1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added solution task#3 of HomeWork#1" />
   </component>
 </project>
