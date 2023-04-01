@@ -16,7 +16,7 @@ public class Main {
         Logger logger = Logger.getLogger(Main.class.getName());
         FileHandler fh = new FileHandler("log.txt");
         logger.addHandler(fh);
-        logger.info("Sorting_Bubble.Bubble");
+        logger.info("Array sorted");
         Sorting_Bubble.Bubble(array_n);
 
         IntStream.range(0, array_n.length).forEach(i -> System.out.printf("%d, ", array_n[i]));
