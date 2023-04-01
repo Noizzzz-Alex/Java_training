@@ -3,24 +3,24 @@
 результат после каждой итерации запишите в лог-файл.
  */
 
-import java.io.IOException;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.stream.IntStream;
 
 public class Main {
+/*
+Дана строка (получение через обычный текстовый файл!!!)
 
+"фамилия":"Иванов","оценка":"5","предмет":"Математика"
+"фамилия":"Петрова","оценка":"4","предмет":"Информатика"
 
-    public static void main(String[] args) throws IOException {
-        int[] array_n = new int[]{5, 120, 57, 307, 56, 65, 684, 1869, 17};
-        Logger logger = Logger.getLogger(Main.class.getName());
-        FileHandler fh = new FileHandler("log.txt");
-        logger.addHandler(fh);
-        logger.info("Sorting_Bubble.Bubble");
-        Sorting_Bubble.Bubble(array_n);
+Написать метод(ы), который распарсит строку и, используя StringBuilder, создаст строки вида:
+Студент [фамилия] получил [оценка] по предмету [предмет].
 
-        IntStream.range(0, array_n.length).forEach(i -> System.out.printf("%d, ", array_n[i]));
+Пример вывода в консоль:
+Студент Иванов получил 5 по предмету Математика.
+Студент Петрова получил 4 по предмету Информатика.
+Студент Краснов получил 5 по предмету Физика.
+ */
 
+    public static void main(String[] args){
 
 
     }
