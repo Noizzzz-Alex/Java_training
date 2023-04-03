@@ -3,20 +3,26 @@
 результат после каждой итерации запишите в лог-файл.
  */
 
-import java.io.FileNotFoundException;
+
+import java.util.ArrayList;
 
 public class Main {
     /*
-
+    Пусть дан произвольный список целых чисел, удалить из него чётные числа
      */
 
-    public static void main(String[] args) throws FileNotFoundException {
-        int first_number = input_output.Input_parse_int();
-        char action = input_output.Input_action_char();
-        int number_two = input_output.Input_parse_int();
-        int result = Action.math_action(first_number,action,number_two);
-        System.out.printf("%d %c %d = %d",first_number,action,number_two,result);
-
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(i);
+        }
+        System.out.println(list);//исходный список
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) {
+                list.remove(i);
+            }
+        }
+        System.out.println(list);//конечный список
     }
 }
 
