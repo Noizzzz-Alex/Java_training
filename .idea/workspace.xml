@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="added task#1">
+    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="added task#2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680552329851</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added task#2">
+      <created>1680552969668</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680552969668</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +224,8 @@
     <MESSAGE value="added Logger" />
     <MESSAGE value="added log for calc" />
     <MESSAGE value="added task#1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added task#1" />
+    <MESSAGE value="added task#2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added task#2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
