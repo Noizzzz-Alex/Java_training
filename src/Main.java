@@ -3,12 +3,14 @@
 результат после каждой итерации запишите в лог-файл.
  */
 
+import java.io.FileNotFoundException;
+
 public class Main {
     /*
 
      */
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException {
         int first_number = input_output.Input_parse_int();
         char action = input_output.Input_action_char();
         int number_two = input_output.Input_parse_int();
