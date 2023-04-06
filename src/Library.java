@@ -1,9 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Library {
     public static int Input_parse_int() {
@@ -80,6 +77,7 @@ public class Library {
             }
         }
     }
+
     public static ArrayList<Integer> RandomList(int size_list, int up_random_limit) {
         Random random = new Random();
         ArrayList<Integer> list = new ArrayList<>();
@@ -88,6 +86,25 @@ public class Library {
         }
         return list;
     }
+
+    public static LinkedList<Integer> Random_Linked_List(int size_list, int up_random_limit) {
+        Random random = new Random();
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < size_list; i++) {
+            list.addFirst(random.nextInt(up_random_limit));
+        }
+        return list;
+    }
+
+    public static LinkedList<Integer> Linked_List_Back(LinkedList<Integer> older_list) {
+        LinkedList<Integer> new_list = new LinkedList<>();
+        for (int i = 0; i < older_list.size(); i++) {
+            int temp = older_list.get(i);
+            new_list.addFirst(temp);
+        }
+        return new_list;
+    }
+
 
 }
 
