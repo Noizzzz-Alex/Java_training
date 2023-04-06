@@ -4,17 +4,14 @@ import java.util.LinkedList;
 
 public class Main {
     /*
-    Пусть дан LinkedList с несколькими элементами.
-    Реализуйте метод(не void), который вернет “перевернутый” список.
+Реализуйте очередь с помощью LinkedList со следующими методами:
+enqueue() - помещает элемент в конец очереди,
+dequeue() - возвращает первый элемент из очереди и удаляет его,
+first() - возвращает первый элемент из очереди, не удаляя.
      */
 
     public static void main(String[] args) {
-        LinkedList<Integer> ll = Library.Random_Linked_List(15, 30);
-        System.out.println(ll);
-        LinkedList<Integer> new_ll = Library.Linked_List_Back(ll);
-        System.out.println(new_ll);
-
-
-
+        LinkedList<String> ll = new LinkedList<String>();
+        Library.Linked_List_StartMenu(ll);
     }
 }

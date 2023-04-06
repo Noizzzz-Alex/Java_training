@@ -105,9 +105,46 @@ public class Library {
         return new_list;
     }
 
-
+    public static void Linked_List_StartMenu(LinkedList<String> list) {
+        Scanner sc = new Scanner(System.in);
+        String str = "";
+        while (true) {
+            System.out.println("Выберите пункт меню: ");
+            System.out.println("_______________________________________");
+            System.out.println("1 - поместить элемент в конец очереди");
+            System.out.println("2 - вернуть первый элемент с удалением");
+            System.out.println("3 - вернуть первый элемент без удаления");
+            System.out.println("4 - выход");
+            System.out.println("_______________________________________");
+            str = sc.nextLine();
+            if (str.equals("1")) {
+                System.out.println("_________________________");
+                System.out.println("Ожидание ввода элемента: ");
+                System.out.println("_________________________");
+                str = sc.nextLine();
+                list.addLast(str);
+            }
+            if (str.equals("2")) {
+                if (!list.isEmpty()) {
+                    list.removeFirst();
+                } else {
+                    System.out.println("____________");
+                    System.out.println("Список пуст!");
+                    System.out.println("____________");
+                }
+            }
+            if (str.equals("3")) {
+                System.out.println(list.get(0));
+            }
+            if (str.equals("4")) {
+                System.out.println("______________");
+                System.out.println("Всего доброго!");
+                System.out.println("______________");
+                break;
+            }
+        }
+    }
 }
-
 
 
 
