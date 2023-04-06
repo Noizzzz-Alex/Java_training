@@ -203,6 +203,7 @@ public class Library {
                 list.addLast(String.valueOf(result));
             }
             if (str.equals("4")) {
+                result = 1;
                 System.out.println("Введите число(если нажмите Enter)");
                 while (!str.isEmpty()) {
                     str = sc.nextLine();
@@ -211,8 +212,13 @@ public class Library {
                         System.out.println();
                     } else {
                         System.out.println("Введите число(если нажмите Enter)");
-                        result = Integer.parseInt(str);
-                        result /= Integer.parseInt(str);
+                        int temp = Integer.parseInt(str);
+                        if (result == 1){
+                            result = temp;
+                        }
+                        else {
+                            result/= temp;
+                        }
                     }
                 }
                 list.addLast(String.valueOf(result));
