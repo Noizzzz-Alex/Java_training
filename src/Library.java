@@ -1,3 +1,4 @@
+import javax.lang.model.type.NullType;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -144,7 +145,92 @@ public class Library {
             }
         }
     }
+
+    public static void Calc_StartMenu(LinkedList<String> list) {
+        Scanner sc = new Scanner(System.in);
+        String str = "";
+        int result = 0;
+        while (!str.equals("6")) {
+            System.out.println("Выберите действие: \n" +
+                    "1 - Сложение\n" +
+                    "2 - Вычитание\n" +
+                    "3 - Умножение\n" +
+                    "4 - Деление\n" +
+                    "5 - Отмена\n" +
+                    "6 - Выход");
+            str = sc.nextLine();
+            if (str.equals("1")) {
+                System.out.println("Введите число(если нажмите Enter)");
+                while (!str.isEmpty()) {
+                    str = sc.nextLine();
+                    if (str.isEmpty()) {
+                        System.out.printf("result = %d", result);
+                        System.out.println();
+                    } else {
+                        System.out.println("Введите число(если нажмите Enter)");
+                        result += Integer.parseInt(str);
+                    }
+                }
+                list.addLast(String.valueOf(result));
+            }
+            if (str.equals("2")) {
+                System.out.println("Введите число(если нажмите Enter)");
+                while (!str.isEmpty()) {
+                    str = sc.nextLine();
+                    if (str.isEmpty()) {
+                        System.out.printf("result = %d", result);
+                        System.out.println();
+                    } else {
+                        System.out.println("Введите число(если нажмите Enter)");
+                        result -= Integer.parseInt(str);
+                    }
+                }
+                list.addLast(String.valueOf(result));
+            }
+            if (str.equals("3")) {
+                result = 1;
+                System.out.println("Введите число(если нажмите Enter)");
+                while (!str.isEmpty()) {
+                    str = sc.nextLine();
+                    if (str.isEmpty()) {
+                        System.out.printf("result = %d", result);
+                        System.out.println();
+                    } else {
+                        System.out.println("Введите число(если нажмите Enter)");
+                        result *= Integer.parseInt(str);
+                    }
+                }
+                list.addLast(String.valueOf(result));
+            }
+            if (str.equals("4")) {
+                System.out.println("Введите число(если нажмите Enter)");
+                while (!str.isEmpty()) {
+                    str = sc.nextLine();
+                    if (str.isEmpty()) {
+                        System.out.printf("result = %d", result);
+                        System.out.println();
+                    } else {
+                        System.out.println("Введите число(если нажмите Enter)");
+                        result = Integer.parseInt(str);
+                        result /= Integer.parseInt(str);
+                    }
+                }
+                list.addLast(String.valueOf(result));
+            }
+            if (str.equals("5")) {
+                System.out.println("Отмена ранее полученного результата");
+                list.removeLast();
+                result = Integer.parseInt(list.removeLast());
+                System.out.printf("текущий результат = %s", result);
+                System.out.println();
+            }
+
+
+        }
+    }
 }
+
+
 
 
 

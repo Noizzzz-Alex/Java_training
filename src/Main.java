@@ -12,6 +12,6 @@ first() - возвращает первый элемент из очереди, 
 
     public static void main(String[] args) {
         LinkedList<String> ll = new LinkedList<String>();
-        Library.Linked_List_StartMenu(ll);
+        Library.Calc_StartMenu(ll);
     }
 }
