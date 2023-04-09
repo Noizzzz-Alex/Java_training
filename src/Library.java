@@ -213,11 +213,10 @@ public class Library {
                     } else {
                         System.out.println("Введите число(если нажмите Enter)");
                         int temp = Integer.parseInt(str);
-                        if (result == 1){
+                        if (result == 1) {
                             result = temp;
-                        }
-                        else {
-                            result/= temp;
+                        } else {
+                            result /= temp;
                         }
                     }
                 }
@@ -233,9 +232,36 @@ public class Library {
 
 
         }
+
+    }
+
+    public static void PhoneBook_Menu(HashMap<String, Integer> map) {
+        Scanner sc = new Scanner(System.in);
+        String str = "";
+        while (!str.equals("4")) {
+            System.out.println("Выберите действие: \n" +
+                    "1 - Показать все контакты\n" +
+                    "2 - Добавить контакт\n" +
+                    "3 - Добавить номер к контакту\n" +
+                    "4 - Выход");
+            str = sc.nextLine();
+            if (str.equals("1")) {
+                System.out.println("Введите число(если нажмите Enter)");
+                while (!str.isEmpty()) {
+                    str = sc.nextLine();
+                    if (str.isEmpty()) {
+                        System.out.printf("result = %d", result);
+                        System.out.println();
+                    } else {
+                        System.out.println("Введите число(если нажмите Enter)");
+                        result += Integer.parseInt(str);
+                    }
+                }
+
+            }
+        }
     }
 }
-
 
 
 
