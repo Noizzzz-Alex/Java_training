@@ -29,8 +29,8 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        HashMap<String, String> phoneBook = new HashMap<>();
-        Library.PhoneBook_Menu(phoneBook);
+        HashMap<String, String> PB = new HashMap<>();
+        Library.PhoneBook_Menu(PB);
 
 
     }

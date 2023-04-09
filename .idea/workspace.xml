@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="init task#1 Homework#5">
-      <change afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="added Reader for contacts and Writer for saving contact task#1 Homework#5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhoneBook.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBook.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681033543962</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added Reader for contacts and Writer for saving contact task#1 Homework#5">
+      <created>1681044199685</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681044199685</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +273,8 @@
     <MESSAGE value="added task#2 of HomeWork#4" />
     <MESSAGE value="added task#3 of HomeWork#4" />
     <MESSAGE value="init task#1 Homework#5" />
-    <option name="LAST_COMMIT_MESSAGE" value="init task#1 Homework#5" />
+    <MESSAGE value="added Reader for contacts and Writer for saving contact task#1 Homework#5" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Reader for contacts and Writer for saving contact task#1 Homework#5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

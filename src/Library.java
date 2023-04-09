@@ -1,4 +1,3 @@
-import javax.lang.model.type.NullType;
 import java.io.*;
 import java.util.*;
 
@@ -239,18 +238,16 @@ public class Library {
         Scanner sc = new Scanner(System.in);
         String str = "";
         File PhoneBook = new File("D:\\Java Project\\untitled\\src\\PhoneBook.txt");
-        while (!str.equals("4")) {
+        while (!str.equals("3")) {
             System.out.println("Выберите действие: \n" +
                     "1 - Показать все контакты\n" +
                     "2 - Добавить контакт\n" +
-                    "3 - Добавить номер к контакту\n" +
-                    "4 - Выход");
+                    "3 - Выход");
             str = sc.nextLine();
             if (str.equals("1")) {
                 try {
-                    Reader.ReaderContacts(PhoneBook);
-                }
-                catch (Exception e) {
+                    Reader.ReaderContacts(PhoneBook, map);
+                } catch (Exception e) {
                     System.out.println("+++++++++++++++++++++++++++++++++++++++");
                     System.out.println("Файл пуст! Для начала создайте контакты");
                     System.out.println("+++++++++++++++++++++++++++++++++++++++");
@@ -262,30 +259,32 @@ public class Library {
                 String temp_name = sc.nextLine();
                 System.out.println("Введите номер(если их несколько введите через запятую)");
                 String temp_number = sc.nextLine();
-                map.put(temp_name,temp_number);
+                map.put(temp_name, temp_number);
                 Writer_file(map);
                 System.out.println("Контакт сохранен");
 
             }
+            if (str.equals("3")) {
+                System.out.println(map);
+            }
         }
     }
-    public static void Writer_file(HashMap<String,String> map){
+
+    public static void Writer_file(HashMap<String, String> map) {
         File PhoneBook = new File("D:\\Java Project\\untitled\\src\\PhoneBook.txt");
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(PhoneBook,true));
-            for (Map.Entry< String, String> entry: map.entrySet()){
+            BufferedWriter bw = new BufferedWriter(new FileWriter(PhoneBook, true));
+            for (Map.Entry<String, String> entry : map.entrySet()) {
                 String key = entry.getKey();
                 String value = entry.getValue();
                 bw.write(key + ":" + value + "\n");
                 bw.close();
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Error");
         }
     }
 }
-
 
 
 

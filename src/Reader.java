@@ -1,9 +1,10 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Reader {
-    public static void ReaderContacts(File file) {
+    public static void ReaderContacts(File file,HashMap<String, String> map) {
         try {
             Scanner fileReader = new Scanner(file);
             int count = 1;
@@ -20,6 +21,7 @@ public class Reader {
                 count++;
                 System.out.println();
                 System.out.println("____________________");
+                map.put(name,number);
             }
 
 
@@ -28,6 +30,8 @@ public class Reader {
             e.printStackTrace();
         }
     }
+
+
 }
 //Geralt:79456814565
 //Vesemir:79451236545,79845613245
