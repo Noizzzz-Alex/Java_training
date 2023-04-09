@@ -1,6 +1,5 @@
 import javax.lang.model.type.NullType;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.*;
 
 public class Library {
@@ -235,9 +234,11 @@ public class Library {
 
     }
 
-    public static void PhoneBook_Menu(HashMap<String, Integer> map) {
+
+    public static void PhoneBook_Menu(HashMap<String, String> map) {
         Scanner sc = new Scanner(System.in);
         String str = "";
+        File PhoneBook = new File("D:\\Java Project\\untitled\\src\\PhoneBook.txt");
         while (!str.equals("4")) {
             System.out.println("Выберите действие: \n" +
                     "1 - Показать все контакты\n" +
@@ -246,19 +247,41 @@ public class Library {
                     "4 - Выход");
             str = sc.nextLine();
             if (str.equals("1")) {
-                System.out.println("Введите число(если нажмите Enter)");
-                while (!str.isEmpty()) {
-                    str = sc.nextLine();
-                    if (str.isEmpty()) {
-                        System.out.printf("result = %d", result);
-                        System.out.println();
-                    } else {
-                        System.out.println("Введите число(если нажмите Enter)");
-                        result += Integer.parseInt(str);
-                    }
+                try {
+                    Reader.ReaderContacts(PhoneBook);
+                }
+                catch (Exception e) {
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++");
+                    System.out.println("Файл пуст! Для начала создайте контакты");
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++");
                 }
 
             }
+            if (str.equals("2")) {
+                System.out.println("Введите имя нового контакта");
+                String temp_name = sc.nextLine();
+                System.out.println("Введите номер(если их несколько введите через запятую)");
+                String temp_number = sc.nextLine();
+                map.put(temp_name,temp_number);
+                Writer_file(map);
+                System.out.println("Контакт сохранен");
+
+            }
+        }
+    }
+    public static void Writer_file(HashMap<String,String> map){
+        File PhoneBook = new File("D:\\Java Project\\untitled\\src\\PhoneBook.txt");
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(PhoneBook,true));
+            for (Map.Entry< String, String> entry: map.entrySet()){
+                String key = entry.getKey();
+                String value = entry.getValue();
+                bw.write(key + ":" + value + "\n");
+                bw.close();
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Error");
         }
     }
 }
