@@ -1,6 +1,7 @@
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 
 public class Main {
@@ -31,8 +32,12 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        HashMap<String, String> PB = new HashMap<>();
-        Library.PhoneBook_Menu(PB);
+        File file = new File("D:\\Java Project\\untitled\\src\\List.txt");
+        LinkedList<String> employers = new LinkedList();
+        HashMap<String, Integer>names = new HashMap<String, Integer>();
+        Reader.Reader_File(file,employers);
+        Library.Counter_Names(employers,names);
+        Library.Sorted_Names(names);
 
 
     }

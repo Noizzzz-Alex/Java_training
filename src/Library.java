@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Library {
     public static int Input_parse_int() {
@@ -283,6 +284,31 @@ public class Library {
         } catch (Exception e) {
             System.out.println("Error");
         }
+    }
+
+    public static void Counter_Names(LinkedList<String> ll, HashMap<String, Integer> map) {
+        for (String employer : ll) {
+            String name = employer.split(" ")[0];
+            if (map.containsKey(name)) {
+                map.put(name, map.get(name) + 1);
+            } else {
+                map.put(name, 1);
+            }
+        }
+    }
+
+    public static void Sorted_Names(HashMap<String, Integer> map) {
+        HashMap<String, Integer> temp = map.entrySet().stream().
+                sorted(Comparator.comparingInt(e -> -e.getValue())).
+                collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> {
+                            throw new AssertionError();
+                        },
+                        LinkedHashMap::new));
+        temp.entrySet().stream().forEach(System.out::println);
+
     }
 }
 

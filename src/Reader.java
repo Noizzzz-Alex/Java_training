@@ -1,10 +1,11 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Reader {
-    public static void ReaderContacts(File file,HashMap<String, String> map) {
+    public static void ReaderContacts(File file, HashMap<String, String> map) {
         try {
             Scanner fileReader = new Scanner(file);
             int count = 1;
@@ -21,7 +22,7 @@ public class Reader {
                 count++;
                 System.out.println();
                 System.out.println("____________________");
-                map.put(name,number);
+                map.put(name, number);
             }
 
 
@@ -31,7 +32,19 @@ public class Reader {
         }
     }
 
+    public static void Reader_File(File file, LinkedList<String> temp_list ) {
+        try {
+            Scanner fileReader = new Scanner(file);
+            while (fileReader.hasNextLine()){
+                String data = fileReader.nextLine();
+                temp_list.add(data);
 
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+            e.printStackTrace();
+        }
+    }
 }
 //Geralt:79456814565
 //Vesemir:79451236545,79845613245
