@@ -6,38 +6,17 @@ import java.util.LinkedList;
 
 public class Main {
     /*
-    Пусть дан список сотрудников:
-    Иван Иванов
-    Светлана Петрова
-    Кристина Белова
-    Анна Мусина
-    Анна Крутова
-    Иван Юрин
-    Петр Лыков
-    Павел Чернов
-    Петр Чернышов
-    Мария Федорова
-    Марина Светлова
-    Мария Савина
-    Мария Рыкова
-    Марина Лугова
-    Анна Владимирова
-    Иван Мечников
-    Петр Петин
-    Иван Ежов
 
-Написать программу, которая найдет и выведет повторяющиеся имена
-с количеством повторений.
-Отсортировать по убыванию популярности Имени.
+    На шахматной доске расставить 8 ферзей так,
+    чтобы они не били друг друга. И вывести Доску. Пример вывода доски 8x8
+
+0x000000
+0000x000
+00x00000
      */
 
     public static void main(String[] args) {
-        File file = new File("D:\\Java Project\\untitled\\src\\List.txt");
-        LinkedList<String> employers = new LinkedList();
-        HashMap<String, Integer>names = new HashMap<String, Integer>();
-        Reader.Reader_File(file,employers);
-        Library.Counter_Names(employers,names);
-        Library.Sorted_Names(names);
+
 
 
     }
