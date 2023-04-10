@@ -310,6 +310,28 @@ public class Library {
         temp.entrySet().stream().forEach(System.out::println);
 
     }
+
+    public static boolean findPosition(int row, int[] queens) {
+        if (row == 8) {
+            return true;
+        }
+        for (int col = 0; col < 8; col++) {
+            boolean isSafe = true;
+            for (int i = 0; i < row; i++) {
+                if (queens[i] == col || queens[i] == col - row + i || queens[i] == col + row - i) {
+                    isSafe = false;
+                    break;
+                }
+            }
+            if (isSafe) {
+                queens[row] = col;
+                if (findPosition(row + 1, queens)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
 
 

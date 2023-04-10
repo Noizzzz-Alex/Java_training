@@ -1,9 +1,3 @@
-
-import java.io.File;
-import java.util.HashMap;
-import java.util.LinkedList;
-
-
 public class Main {
     /*
 
@@ -16,8 +10,19 @@ public class Main {
      */
 
     public static void main(String[] args) {
+        int[] queens = new int[8];
+        Library.findPosition(0, queens);
+        for (int row = 0; row < 8; row++) {
+            for (int col = 0; col < 8; col++) {
+                if (queens[row] == col) {
+                    System.out.print("x ");
+                } else {
+                    System.out.print("o ");
+                }
+            }
+            System.out.println();
 
 
-
+        }
     }
 }

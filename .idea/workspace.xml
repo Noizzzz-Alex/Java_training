@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="init task#2 Homework#5">
-      <change afterPath="$PROJECT_DIR$/src/List.txt" afterDir="false" />
+    <list default="true" id="2228b4aa-0a88-4e7c-b44d-b92165836752" name="Changes" comment="init task#3 Homework#5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBook.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBook.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HomeWork#5_task#1" />
+        <entry key="$PROJECT_DIR$" value="HomeWork#5_task#2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -246,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681062938216</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added task#2 Homework#5">
+      <created>1681132739805</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681132739805</updated>
+    </task>
+    <task id="LOCAL-00024" summary="init task#3 Homework#5">
+      <created>1681132878711</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681132878711</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +302,9 @@
     <MESSAGE value="added Reader for contacts and Writer for saving contact task#1 Homework#5" />
     <MESSAGE value="added solution for task#1 Homework#5" />
     <MESSAGE value="init task#2 Homework#5" />
-    <option name="LAST_COMMIT_MESSAGE" value="init task#2 Homework#5" />
+    <MESSAGE value="added task#2 Homework#5" />
+    <MESSAGE value="init task#3 Homework#5" />
+    <option name="LAST_COMMIT_MESSAGE" value="init task#3 Homework#5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
