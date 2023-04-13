@@ -332,6 +332,57 @@ public class Library {
         }
         return false;
     }
+
+    public static void Main_menu_Laptop(HashSet<Laptop> notebooks) {
+        Scanner sc = new Scanner(System.in, "cp866");
+
+        System.out.println();
+        System.out.println("Выберите пункт меню: ");
+        boolean filter = true;
+        while (filter) {
+            System.out.println("1 - Выбрать по ОЗУ\n" +
+                    "2 - Выбрать по объему ПЗУ\n" +
+                    "3 - Выбрать по ОС\n" +
+                    "4 - Выбрать по цвету\n" +
+                    "5 - Посмотреть всё\n" +
+                    "0 - Выход");
+
+            String operation = sc.nextLine();
+            switch (operation) {
+                case "1":
+                    Reader.filterRAM(notebooks, sc);
+                    break;
+                case "2":
+                    Reader.FilterHardDisk(notebooks, sc);
+                    break;
+                case "3":
+                    Reader.filterOS(notebooks, sc);
+                    break;
+                case "4":
+                    Reader.filterColor(notebooks, sc);
+                    break;
+                case "5":
+                    showCatalog(notebooks);
+                    break;
+                case "0":
+                    System.out.println("Всего доброго");
+                    filter = false;
+                    break;
+                default:
+                    System.out.println("Ошибка ввода! Повторите ввод");
+                    System.out.println();
+                    break;
+            }
+        }
+    }
+    public static void showCatalog(HashSet<Laptop> notebooks) {
+        System.out.println();
+        System.out.println("Полный каталог : ");
+        System.out.println();
+        for (Laptop note : notebooks) {
+            note.showInfo();
+        }
+    }
 }
 
 

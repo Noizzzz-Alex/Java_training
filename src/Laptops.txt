@@ -1,0 +1,10 @@
+15.6,Black,MSI,Bravo_15_B5DD,Free_DOS,AMD,Rysen_5,6,3.3f,16,512,Radeon_RX_5500M,4
+16,Black, "MSI",Creator_Z16_HF, "Windows 11",Intel", "Core i7", 8,2.3f, 16, 512,Nvidia RTX 3060,6
+15.6,Black, "MSI",GF63_11UD, "Windows 11",Intel", "Core i5", 6,2.7f, 8, 512,Nvidia RTX 3050Ti,4
+14,Black, "MSI",Modern_14_C12M, "Free DOS",AMD", "Rysen 5", 6,3.3f, 16, 512,Radeon RX 5500M,4
+15.6,Grey,"MSI",Pulse_GL66 ,"Windows 11",Intel","Core i7",14,2.3f,16,512,Nvidia RTX 3060,6
+17.3,Grey,"MSI",Pulse_GL76,"Free DOS",Intel","Core i5",12,2.5f,16,512,Nvidia RTX 3060,6
+15.6,Black,"MSI",Vector_GP66,"Windows 11",Intel","Core i7",14,2.3f,16,1024,Nvidia RTX 3070Ti,8
+17.3,Black,"MSI",Stealth_17M ,"Windows 11",Intel","Core i7",14,1.8f,16,1024,Nvidia RTX 3060,6
+14,Silver,"Honor",MagicBook_X14,"Windows 10",Intel","Core i5",4,1.6f,8,512,Intel UHD Graphics,0
+16.1,Cosmo_Grey,Honor,MagicBook_16,Windows_11,AMD","Rysen 5",6,3.3f,16,512,AMD Radeon Graphics,0
